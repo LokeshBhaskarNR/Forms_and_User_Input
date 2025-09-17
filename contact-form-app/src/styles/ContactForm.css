@@ -1,0 +1,139 @@
+
+.contact-form-container {
+  
+  background: linear-gradient(135deg, #e4e4e4 0%, #e3e3e3 100%);
+  
+  align-items: center;
+}
+
+.contact-form-card {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  margin: 30px;
+  border: none;
+  overflow: hidden;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.form-title {
+  color: #1890ff !important;
+  margin-bottom: 8px !important;
+  font-weight: 600;
+}
+
+.form-subtitle {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.message-label {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.character-count {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.submit-button {
+  height: 48px;
+  font-size: 16px;
+  font-weight: 500;
+  background: linear-gradient(135deg, #1890ff 0%, #096dd9 100%);
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  background: linear-gradient(135deg, #096dd9 0%, #0050b3 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(24, 144, 255, 0.3);
+}
+
+/* Ant Design Customizations */
+.ant-form-item-label > label {
+  font-weight: 500;
+  color: #262626;
+}
+
+.ant-input,
+.ant-input-affix-wrapper,
+.ant-picker,
+.ant-input[disabled] {
+  border-radius: 8px;
+  border: 1px solid #d9d9d9;
+  transition: all 0.3s ease;
+}
+
+.ant-input:focus,
+.ant-input-affix-wrapper:focus,
+.ant-picker:focus,
+.ant-input:hover,
+.ant-input-affix-wrapper:hover,
+.ant-picker:hover {
+  border-color: #1890ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.1);
+}
+
+.ant-upload {
+  width: 100%;
+}
+
+.ant-upload-list {
+  margin-top: 8px;
+}
+
+.ant-checkbox-wrapper {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.ant-checkbox-wrapper:hover .ant-checkbox-inner,
+.ant-checkbox:hover .ant-checkbox-inner,
+.ant-checkbox-input:focus + .ant-checkbox-inner {
+  border-color: #1890ff;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-form-container {
+    padding: 10px;
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+  
+  .form-title {
+    font-size: 24px !important;
+  }
+  
+  .form-subtitle {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-form-card {
+    margin: 0;
+    border-radius: 12px;
+  }
+  
+  .message-label {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}

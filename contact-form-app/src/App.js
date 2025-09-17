@@ -1,14 +1,16 @@
 import React from 'react';
 import { ConfigProvider } from 'antd';
-import ContactForm from './ContactForm';
+import ContactForm from './components/ContactForm';
+import './App.css';
 
-const App = () => {
+function App() {
   return (
     <ConfigProvider
       theme={{
         token: {
           colorPrimary: '#1890ff',
           borderRadius: 8,
+          fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
         },
       }}
     >
@@ -17,6 +19,6 @@ const App = () => {
       </div>
     </ConfigProvider>
   );
-};
+}
 
 export default App;
